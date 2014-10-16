@@ -58,7 +58,7 @@ function onDeviceReady() {
 }
 	//Capturing photo
 function capturePhoto() {
-
+	  alert("open camera")
 	  navigator.camera.getPicture(onPhotoDataSuccess, onFail, {
 	  quality : 25, 
 	  destinationType : Camera.DestinationType.FILE_URI, 
@@ -71,16 +71,20 @@ function capturePhoto() {
     
    
 function onPhotoDataSuccess(imageSrc) {
+	alert("photo taken")
 	var html = '<img src="'+imageSrc+'" />'
 	$('#image_preview').html(html);
 	$('#filepath').html(imageSrc);
+	getphoto_cooridinates()
 }
 
 function getphoto_cooridinates(){
+	alert("gps")
 	navigator.geolocation.getCurrentPosition(onGPSSuccess, onError, {enableHighAccuracy: true});
 }
 
 function onGPSSuccess(position){
+	alert("got gps point")
 	$('#latitude').val(position.coords.latitude);
 	$('#longitude').val(position.coords.longitude);
 }
@@ -91,6 +95,7 @@ function onFail(message) {
 }
 
 function upload_record(){
+	alert("upload")
 	var win = function (r) {
 		console.log("Code = " + r.responseCode);
 		console.log("Response = " + r.response);

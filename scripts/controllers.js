@@ -54,13 +54,7 @@ phonecatControllers.controller('SendCtrl', ['$scope',
 function($scope) {
 	console.log("send");
 	
-	var pictureSource;   // picture source
-    var destinationType; // sets the format of returned value 
-	var imageData_name;
-   
-    document.addEventListener("deviceready",onDeviceReady,false);
-	alert("Page open");
-		
+	
 }]);
 
 

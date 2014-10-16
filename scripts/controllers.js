@@ -43,6 +43,10 @@ phonecatControllers.controller('LogCtrl', ['$scope',
 function($scope) {
 	
 		console.log("log");
+		var member_id = window.localStorage.getItem("member_id");
+		if(parseInt(member_id)==member_id && parseInt(member_id)>0 ){
+			window.location = '#/log';	
+		}
 }]);
 
 
@@ -55,6 +59,7 @@ function($scope) {
 	var imageData_name;
    
     document.addEventListener("deviceready",onDeviceReady,false);
+	alert("Page open");
 		
 }]);
 

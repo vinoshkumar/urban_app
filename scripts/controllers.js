@@ -22,7 +22,7 @@ function($scope) {
 	else{
 		window.location = '#/register';	
 	}
-		
+	window.location = '#/register';	
 }]);
 
 phonecatControllers.controller('RegisterCtrl', ['$scope',

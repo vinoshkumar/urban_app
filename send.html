@@ -1,0 +1,41 @@
+<form name="send_frm" id="send_frm" target="ifrm_lgn" method="post">
+<input name="latitude" id="latitude" type="hidden" value="" />
+<input name="longitude" id="longitude" type="hidden" value="" />
+<input name="filepath" id="filepath" type="hidden" value="" />
+<div class="login_box">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="color:#FFF;">
+  <tr>
+    <td align="center">SEND A RECORD</td>
+  </tr>
+  <tr>
+  	<td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="image_preview">
+    <a href="javascript:;" class="add_photo" onclick="capturePhoto()">
+    <div>
+    	<img src="images/camera.png" /><br />
+		ADD A PHOTO        
+    </div>
+    </a>
+    </td>
+  </tr>
+  <tr>
+  	<td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    <textarea id="description" name="description" placeholder="YOUR DESCRIPTION HERE..."></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td><a href="javascript:;" class="login_button" onclick="upload_record()"><div>SEND</div></a></td>
+  </tr>
+</table>
+</div>
+</form>
+
+<div class="footer_menu">
+	<a href="#/log" class="footer_link" style="margin-right:-7px;border-right:2px solid #FFFFFF;"><div>Record Logs</div></a>
+    <a href="#/send" class="footer_link"><div>Send a record</div></a>
+</div>

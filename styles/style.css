@@ -1,0 +1,310 @@
+@font-face {
+	font-family: "robotobold";
+    src: url("../fonts/Roboto-BoldCondensed.ttf") format("opentype"); 
+}
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/Roboto-Light.ttf") format("opentype"); 
+}
+
+*{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body{
+	padding:0px;
+	margin:0px;
+	background:#009963;
+	font-family: Dosis;
+}
+.bold_font{
+	font-family: "robotobold";
+}
+
+/*///////////////////////////////////////*/
+/*--------------Data Preloader-----------*/
+/*///////////////////////////////////////*/
+
+#preloader {
+	position:fixed;
+	z-index:2500;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#fff; 
+	z-index:999999; 
+}
+
+#status {
+	position:fixed;
+	z-index:999999;
+	width:250px;
+	height:250px;
+	position:absolute;
+	left:50%; 
+	top:50%; 
+	background-size:80px 12px;
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:-125px 0 0 -125px; 
+}
+
+#status p{
+	top:60%;
+}
+
+#status em{
+	font-size:80% !important;
+	display:block;
+	font-style:normal;
+}
+
+
+.content {
+	padding:15px;
+}
+
+.header{
+    
+    margin-bottom: 20px;
+    padding: 10px;
+
+}
+
+.indexheader{
+    
+	background: none repeat scroll 0 0 #ffffff;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    position: fixed;
+    right: 0;
+    top: 8px;
+    width: 100%;
+    z-index: 2;
+}
+
+.header a{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.logo{
+    color: #FFFFFF;
+    font-family: robotobold;
+    font-size: 150%;
+    letter-spacing: 3px;
+    text-shadow: 0 1px 1px #989898;
+}
+
+
+.button{
+	background:#CD1F26;
+	padding:10px;
+	text-decoration:none;
+	color:#FFF;
+	font-size:100%;
+}
+
+.login_box{
+	width:100%;
+	margin-bottom:10px;
+}
+
+.login_box input{
+	display:block;
+	width:100%;
+	border:0px;
+	padding:10px 20px;
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+	margin-bottom:10px;
+	background:#016644;
+	color:#FFFFFF;
+}
+
+.login_box textarea{
+	display:block;
+	width:100%;
+	border:0px;
+	padding:10px 20px;
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+	margin-bottom:10px;
+	background:#016644;
+	color:#FFFFFF;
+}
+
+
+.login_box input[type="password"]{
+	border-top:1px solid #CCCCCC;
+}
+
+.login_button{
+	text-decoration:none;
+	color:#000000;
+	font-size:100%;
+	font-weight:bold;
+}
+
+.login_button div{
+	text-align:center;
+	width:100%;
+	padding:15px 0px;
+	background:#FFFFFF;
+	color:#000000;
+}
+
+#force_sync_btn div{
+	background: #3D3E42 !important;
+}
+
+
+.disabled{
+	background: #3D3E42 !important;
+}
+
+.clear{
+	clear:both;
+}
+
+.subtitle{
+	margin:0px;
+	padding:0px;
+	font-size:150%;
+}
+
+
+.float_left{
+float:left	
+}
+
+.float_right{
+	float:right;
+}
+
+
+.subtext{
+	display:block;
+}
+
+
+
+/****INTTERVENTION PLAN **************/
+
+
+.even{
+	background-color:#f2f2f2;
+	padding:10px 5px;
+	margin:0px !important;
+}
+
+.odd{
+	padding:10px 5px;margin:0px !important;
+}
+
+
+a.tapped {
+    background: rgba(205,31,38,0.6);
+}
+
+
+/************************ CIRCLE *****************************/
+
+.circle{
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	margin:0px auto 20px auto;
+}
+
+.green{
+	background:#008000;
+}
+
+.orange{
+	background:#FE5E00;
+}
+
+.red{
+	background:#FF0000;
+}
+
+.circle.inactive{
+	border:1px solid #CCCCCC;
+	background:#FFFFFF !important;
+}
+
+
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+}
+button, select {
+    text-transform: none;
+}
+button, input {
+    line-height: normal;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+#fix_for_ios{
+	background: none repeat scroll 0 0 #000000;
+    height: 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+	z-index:2;
+}
+
+
+
+
+/****************************footer***************************/
+
+.footer_menu{
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	background:#013334;
+	padding:10px 0px;
+	left:0px;	
+}
+
+.footer_link div{
+	display:inline-block;
+	text-transform:uppercase;
+}
+
+.footer_link{
+	display:inline-block;
+	text-align:center;
+	text-decoration:none;
+	color:#FFFFFF;	
+	width:50%;
+}
+
+/**********************************/
+
+
+.add_photo{
+	text-align:center;
+	text-decoration:none;
+	color:#FFF;
+}
+
+.add_photo div{
+	width:100%;	
+	background:#016644;
+	padding:10px 0px;
+}

@@ -33,6 +33,7 @@ function register(){
 		document.getElementById('register_mobile').style.borderColor="";
 	}
 	
+	alert("TEST");
 	if(flag==0){
 		$('#validating_div').html('Please wait... registering...');
 		var vals = $('#login_frm').serialize();

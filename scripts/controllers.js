@@ -1,7 +1,7 @@
 var phonecatControllers = angular.module('phonecatControllers', []);
 
-var serverurl = "http://localhost/urban_heartbeat/services/";
-//var serverurl = "http://lalithkaushik.com/urban/";
+//var serverurl = "http://localhost/urban_heartbeat/services/";
+var serverurl = "http://lalithkaushik.com/urban/";
 
 
 

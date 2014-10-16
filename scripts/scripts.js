@@ -34,6 +34,7 @@ function register(){
 	}
 	
 	if(flag==0){
+		$('#validating_div').html('Please wait... registering...');
 		var vals = $('#login_frm').serialize();
 		$.post(serverurl+"register.php", vals, function(data){
 			window.localStorage.setItem("member_id", data);
